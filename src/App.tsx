@@ -115,7 +115,7 @@ function App() {
       </div>
     </aside>
     <main>
-      <header className="topbar"><div className="breadcrumb">My workspace <span>/</span><strong>{view}</strong></div><div className="local-badge"><span /> Saved on this device</div></header>
+      <header className="topbar"><div className="breadcrumb">My workspaces <span>/</span><strong>{view}</strong></div><div className="local-badge"><span /> Saved on this device</div></header>
       <div className="main-content">
         <div className="page-heading"><div><div className="eyebrow"><Icon name="sun" size={16} /> A LITTLE FOCUS GOES A LONG WAY</div><h1>{view === 'All tasks' ? 'Make space for progress.' : view === 'Today' ? 'A fresh start, today.' : view === 'Upcoming' ? 'Good things ahead.' : 'Look how far you’ve come.'}</h1><p>Your ideas, plans, and everyday wins. All in one little place.</p></div><button className="primary-button new-task" disabled={!!initial.error} onClick={() => setEditor('new')}><Icon name="plus" size={19} /> New task</button></div>
         {error && <div className="error-banner" role="alert">{error}</div>}
